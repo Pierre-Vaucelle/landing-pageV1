@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Sifonn Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: 
+        local('Sifonn Pro'), 
+        url('font/SIFONN_PRO.otf') format('opentype');
+}
+
+
+.quiSommesNous_section {
+    padding: 3rem 0;
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnQui_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: 'Sifonn Pro';
+}
+.btnQui_container h1 {
+    margin-top: 4rem;
+}
+.btnQui_container a {
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .2s;
+    box-shadow: 0px 0px 40px 4px rgb(187, 187, 187);
+}
+.btnQui_container a:hover {
+    scale: 1.02;
+}
+
+.tripleBtnCard_container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnCardElement {
+    height: 400px;
+    width: 300px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .2s;
+    box-shadow: 0px 0px 40px 4px rgb(187, 187, 187);
+    border-radius: 10px;
+    position: relative;
+}
+.btnCardElement:hover {    
+    scale: 1.02;
+}
+
+.btnCard-img_container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btnCard-img_container img{
+    height: 100%;
+    object-fit: cover;
+}
+.btnCardElement p {
+    position: absolute;
+    color: #000;
+    text-align: center;
+    bottom: 0;
+    font-family: 'Sifonn Pro';
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 1400px) {
+    .tripleBtnCard_container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .tripleBtnCard_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem
+    }
+    .btnCardElement {
+        height: 55px;
+        align-items: center;
+        justify-content: center;
+    }
+    .btnCardElement p {
+        position: initial;
+    }
+    .btnCard-img_container{
+        display: none;
+    }
+}
