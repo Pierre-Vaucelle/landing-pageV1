@@ -59,11 +59,37 @@
     border-radius: 10px;
     position: relative;
 }
+
+.btnCardElement1 {
+    height: 400px;
+    width: 400px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .2s;
+    box-shadow: 0px 0px 40px 4px rgb(187, 187, 187);
+    border-radius: 10px;
+    position: relative;
+}
+
 .btnCardElement:hover {    
     scale: 1.02;
 }
 
+.btnCardElement1:hover {    
+    scale: 1.02;
+}
+
 .btnCard-img_container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnCard-img_container_client {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -76,7 +102,25 @@
     height: 100%;
     object-fit: cover;
 }
+
+.btnCard-img_container_client img{
+    height: 100%;
+    object-fit: cover;
+}
+
 .btnCardElement p {
+    position: absolute;
+    color: #000;
+    text-align: center;
+    bottom: 0;
+    font-family: 'Sifonn Pro';
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #fff;
+}
+
+.btnCardElement1 p {
     position: absolute;
     color: #000;
     text-align: center;
@@ -98,16 +142,33 @@
     .tripleBtnCard_container {
         flex-direction: column;
         align-items: center;
-        gap: 2rem
+        gap: 2rem;
     }
     .btnCardElement {
         height: 55px;
         align-items: center;
         justify-content: center;
     }
+
+    .btnCardElement1 {
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnCard-img_container_client {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+}
+
     .btnCardElement p {
         position: initial;
     }
+
+
     .btnCard-img_container{
         display: none;
     }
