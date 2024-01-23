@@ -38,7 +38,7 @@ body{
 }
 
 .btnQui_container h1 {
-    margin-top: 0;
+    margin-top: 2rem;
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 4rem;
@@ -63,7 +63,7 @@ body{
     box-shadow: 0px 0px 40px 4px rgb(187, 187, 187);
 }
 .btnQui_container a:hover {
-    scale: 1.1;
+    scale: 1.06;
 }
 
 .btnQui_container_btm {
@@ -88,7 +88,7 @@ body{
     box-shadow: 0px 0px 40px 4px rgb(187, 187, 187);
 }
 .btnQui_container_btm a:hover {
-    scale: 1.1;
+    scale: 1.06;
 }
 
 .tripleBtnCard_container {
@@ -107,7 +107,7 @@ body{
     border-radius: 10px;
     overflow: hidden;
     transition: .2s;
-    box-shadow: 0px 0px 40px 4px rgb(187, 187, 187);
+    box-shadow: 0px 0px 20px 4px rgb(187, 187, 187);
     border-radius: 10px;
     position: relative;
 }
@@ -120,17 +120,17 @@ body{
     border-radius: 10px;
     overflow: hidden;
     transition: .2s;
-    box-shadow: 0px 0px 40px 4px rgb(187, 187, 187);
+    box-shadow: 0px 0px 20px 4px rgb(187, 187, 187);
     border-radius: 10px;
     position: relative;
 }
 
 .btnCardElement:hover {    
-    scale: 1.1;
+    scale: 1.06;
 }
 
 .btnCardElement1:hover {    
-    scale: 1.1;
+    scale: 1.06;
 }
 
 .btnCard-img_container {
@@ -186,7 +186,42 @@ body{
 
 @media screen and (max-width: 1400px) {
     .tripleBtnCard_container {
-        width: 100%;
+        width: 80%;
+    }
+
+    .btnQui_container_btm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        padding-top: 2rem;
+        font-family: 'Sifonn Pro';
+    }
+
+    .btnCardElement {
+        height: 300px;
+        width: 300px;
+        text-decoration: none;
+        color: #000;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .2s;
+        box-shadow: 0px 0px 10px 4px rgb(187, 187, 187);
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .btnCardElement1 {
+        height: 300px;
+        width: 300px;
+        text-decoration: none;
+        color: #000;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .2s;
+        box-shadow: 0px 0px 10px 4px rgb(187, 187, 187);
+        border-radius: 10px;
+        position: relative;
     }
 }
 
@@ -203,7 +238,7 @@ body{
 
     .btnQui_container h1 {
         margin-top: 4rem;
-        font-size: 2rem;
+        font-size: 5vw;
         text-align: center;
         margin-bottom: 4rem;
         color: #273370;
@@ -218,27 +253,25 @@ body{
     .tripleBtnCard_container {
         flex-direction: column;
         align-items: center;
+        margin-top: 3rem;
         gap: 2rem;
     }
     .btnCardElement {
         height: 55px;
+        width: 80%;
         align-items: center;
         justify-content: center;
+        box-shadow: 0px 0px 0px 0px rgb(187, 187, 187);
     }
 
     .btnCardElement1 {
-        height: 500px;
+        width: 80%;
+        height: 55px;
         align-items: center;
         justify-content: center;
+        box-shadow: 0px 0px 0px 0px rgb(187, 187, 187);
     }
 
-    .btnCard-img_container_client {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: flex;
-    flex-direction: column;
-    }
 
     .btnCardElement p {
         position: initial;
@@ -257,5 +290,15 @@ body{
         padding-top: 2rem;
         margin-bottom: 5rem;
         font-family: 'Sifonn Pro';
+    }
+
+    .btnQui_container_btm a {
+        background: #fff;
+        color: #000;
+        padding: 1rem;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: .2s;
+        box-shadow: 0px 0px 0px 0px rgb(187, 187, 187);
     }
 }
